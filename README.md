@@ -42,7 +42,8 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetS
 !pip install wandb
 import wandb
 !wandb login
-</code></pre>
+</code>
+</pre>
 
 2. Import Libraries
 <pre> 
