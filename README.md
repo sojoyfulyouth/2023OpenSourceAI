@@ -5,6 +5,7 @@
 ### Dataset
 
 AI-hub '반려동물 피부질환 데이터'
+
 https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=561
 
 ### Tool
@@ -14,11 +15,14 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetS
 
 ### 요구사항
 
+---
+
 1. **AI-hub의 데이터 다운로드**
 
-   a) 회원가입 진행 후 '반려동물 피부질환 데이터' 검색
+   a) [Dataset Link](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=561) 클릭 후 회원가입 진행
 
    b) 라벨링 데이터 다운로드
+
    <img src='https://lh3.googleusercontent.com/fife/AGXqzDlXKYeduQdOFBs6XSfIOX-W32YZZI-q24LBTOskou2akekv1J3G8YIFv3JR9MTigGW4A4nL6DPjRihSBEJ8-SJDpYUuU-bUszDEd-tB_h8zljoWX5Eq9-fcu2f1ifXDVHd5k8-WVi9mBwhCVbdVorotW-fDpax8Euwtkn7ykEthVJfp6yVd7dvU9vOQCVd2YxdmekOTnh7jl271RsJE2XpH3EXTCTgiMC7OhfVUJqPf2206CytcgYnFYlaAkCsPI3gWKWJxYGyRKmJxcTVF9IfMWkzuOBA--hUFm-qttLAW16wWq0n4BUgASZC3WUWCU317kOWCi_S5xazpLOOVfBjFDwCdEpn0Vl-ZLPahutI-ak1jisFke7P-bEa8WYT_ZaDxndpDJ_QxIiTgz07axh4jNtt5mUpYksv3WHopWL_hFnI1Qwz6tC3jl1-JpfFeg5egIF1jxGdlbJOpYktc1xzDI_4ptTrne65JopS04rhNarwThuAdmU5GJpQYdVxSaq2at-0gtpPrE81nNVVszGLsN1mYYxTF-B5WMseugZLzFVYcS3dNdtu5LHsxCfuHbCz8o7YJgjZLUD9V_ubCuzNf6-HpseU_0eJFzvYpaiAY7AKsRNhN5oBNSIjsMJBaqo3riJlC8b2_BjJS3VKVn_DB0gjZusCe1RnscN3esRLyFwwgtAK0hNn0lgu2b3G60Xn8QeMa_2EcW_2mHk0ubY0R7owxAztoNOGGgxlD7g3zLVjEmlS1ace0R-_ujdThCZ23R3PriVgv6rJyEGfKmTHESQOakJWu0o641yieg7NZTKHwFxgImwqAxP07NaJgU4l5W0Hg6TwugHvI0zhOaYXApqUEsR6CKIY1cp24rSq7uERzN_cGY1X4jUuZQoNftFgEeZbEnD-gpAef3wcLrFuU6SlN9vcNagg_1SPqUAhKJWaFC9APqXPHAZ_z92k7grAcCyFmlqv0el_pzUa8PPYPfsbx6ztA0_Kmt-SJ61NPwfOa7u-K2o6mWihCCIaNZ9xfxDmvscBpaJjN3qwaBgbuIfBTjGD2BsAI73DVg4gQ7CFTmkFwWjtTJxlfVX-51M104f24DaTHLmSvJSf9ZQ6Rb3PxwgmJvAsRb3C1I4tZHPVa9x0zML6TA-Qn1z0B1ByGTXr_rJF6xcb81bJEEXDcf25kBaKDWaJuks6Ijo98KeEoHjADLtOsnQyV6LYntQWZoYinQwqFdi06RXZ8Tycx75MgtpbzwcTpb56XtyNbNjTgxihjjlU68XAZ_rgsJ57m8iRqkhO4hubx10qKzN2NL3GRmA1Izkl_je2xUyh1AEgpDIgViKz6Lb2MDwjs65zyCrccyfFOm6OcCHDQklSgwDpwZ7Lz-VUttXOzW4qVh5gMluTzqzjjFiw8B_UL-s_NKA83GedsJaN-1GtTBoniKWrxdGefPRMLFOIvn74z5jEHbYgkL1h0rZAeszM8RHlkO6jU2yLkANsmn7MtZlcKKV-qF1go5n2JSEuuw5GoVTcP5VRDiWPvuw=w2560-h1279' />
 
 ---
@@ -29,17 +33,22 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetS
 
 3. **Google collab에 .ipynb 파일 업로드**
 
+---
+
 ### 실행 방법
 
 1. Import wandb
-<pre> <code>
+<pre> 
+<code>
 !pip install wandb
 import wandb
 !wandb login
-</code></pre>
+</code>
+</pre>
 
 2. Import Libraries
-<pre> <code>
+<pre> 
+<code>
 import torch
 from torch import nn
 import torch.nn.functional as F
@@ -56,10 +65,12 @@ import json
 
 from torchvision import transforms
 
-</code></pre>
+</code>
+</pre>
 
 3. Data Pretreatment
-<pre> <code>
+<pre> 
+<code>
 
 # 압축 풀기 코드
 
@@ -68,9 +79,11 @@ import zipfile
 zipfile.ZipFile('drive/My Drive/openAI/data/data.zip').extractall('drive/My Drive/openAI/data')
 '''
 
-</code></pre>
+</code>
+</pre>
 
-<pre> <code>
+<pre> 
+<code>
 # 원본 이미지 검증
 '''
 def validate_image(filepath):
@@ -86,8 +99,11 @@ def validate_image(filepath):
     else:
         return True
 '''
-</code></pre>
-<pre> <code>
+</code>
+</pre>
+
+<pre> 
+<code>
 # 이미지 검증
 '''
 root = 'drive/My Drive/openAI/data/유증상_라벨_검증'
@@ -115,11 +131,13 @@ files = os.listdir(folder_path)
 
 '''
 
-</code></pre>
+</code>
+</pre>
 
 4. Data Load
 
-<pre> <code>
+<pre> 
+<code>
 
 # json 파일에서 뽑아 사용하는 경우
 import torch
@@ -173,9 +191,11 @@ class MyDataLoader(Dataset):
 
         return image, label
 
-</code></pre>
+</code>
+</pre>
 
-<pre> <code>
+<pre> 
+<code>
 
 #이미지 데이터 가져오기
 from torchvision import transforms
@@ -219,10 +239,12 @@ train_loader = MyDataLoader(train_root, batch_size=100, transform=transform)
 
 test_loader = MyDataLoader(test_root, batch_size=100, transform=transform)
 
-</code></pre>
+</code>
+</pre>
 
 5. Define Model
-<pre> <code>
+<pre> 
+<code>
 class CNN(nn.Module):
   def __init__(self):
     super(CNN,self).__init__()
@@ -244,21 +266,28 @@ x=self.fc2(x)
 
     return F.softmax(x,dim=1)
 
-</code></pre>
+</code>
+</pre>
 
-<pre> <code>
+<pre> 
+<code>
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 # 앞서 정의한 모델을 장치로 올림, 모델 정의
 model = CNN().to(device)
-</code></pre>
-<pre> <code>
+</code>
+</pre>
+
+<pre>
+<code>
 # 모델 학습을 위한 손실 함수와 최적화 함수
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.01)
-</code></pre>
+</code>
+</pre>
 
 6. Model Train
-<pre><code>
+<pre>
+<code>
 #학습
 for epoch in range(5):
   model.train()
@@ -339,4 +368,23 @@ inputs, labels= data
 
 print('Finished Training')
 wandb.finish()
-</code></pre>
+</code>
+
+</pre>
+
+7. Batch Normalization & Dropout
+<pre>
+<code>
+class CNN(nn.Module):
+    def __init__(self):
+        super(CNN, self).__init__()
+        self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=(3, 3), padding=1)
+        self.bn1 = nn.BatchNorm2d(32)
+        self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=(3, 3), padding=1)
+        self.bn2 = nn.BatchNorm2d(64)
+        self.pool = nn.MaxPool2d(kernel_size=(2, 2))
+        self.fc1 = nn.Linear(64 * 7 * 7, 128)
+        self.dropout = nn.Dropout(0.5)
+        self.fc2 = nn.Linear(128, 10)
+</code>
+</pre>
