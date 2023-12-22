@@ -19,9 +19,9 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetS
 
 1. **AI-hub의 데이터 다운로드**
 
-   a) [Dataset Link](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=561) 클릭 후 회원가입 진행
+   (1) [Dataset Link](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=561) 클릭 후 회원가입 진행
 
-   b) 라벨링 데이터 다운로드
+   (2) 라벨링 데이터 다운로드
 
    <img src='https://lh3.googleusercontent.com/fife/AGXqzDlXKYeduQdOFBs6XSfIOX-W32YZZI-q24LBTOskou2akekv1J3G8YIFv3JR9MTigGW4A4nL6DPjRihSBEJ8-SJDpYUuU-bUszDEd-tB_h8zljoWX5Eq9-fcu2f1ifXDVHd5k8-WVi9mBwhCVbdVorotW-fDpax8Euwtkn7ykEthVJfp6yVd7dvU9vOQCVd2YxdmekOTnh7jl271RsJE2XpH3EXTCTgiMC7OhfVUJqPf2206CytcgYnFYlaAkCsPI3gWKWJxYGyRKmJxcTVF9IfMWkzuOBA--hUFm-qttLAW16wWq0n4BUgASZC3WUWCU317kOWCi_S5xazpLOOVfBjFDwCdEpn0Vl-ZLPahutI-ak1jisFke7P-bEa8WYT_ZaDxndpDJ_QxIiTgz07axh4jNtt5mUpYksv3WHopWL_hFnI1Qwz6tC3jl1-JpfFeg5egIF1jxGdlbJOpYktc1xzDI_4ptTrne65JopS04rhNarwThuAdmU5GJpQYdVxSaq2at-0gtpPrE81nNVVszGLsN1mYYxTF-B5WMseugZLzFVYcS3dNdtu5LHsxCfuHbCz8o7YJgjZLUD9V_ubCuzNf6-HpseU_0eJFzvYpaiAY7AKsRNhN5oBNSIjsMJBaqo3riJlC8b2_BjJS3VKVn_DB0gjZusCe1RnscN3esRLyFwwgtAK0hNn0lgu2b3G60Xn8QeMa_2EcW_2mHk0ubY0R7owxAztoNOGGgxlD7g3zLVjEmlS1ace0R-_ujdThCZ23R3PriVgv6rJyEGfKmTHESQOakJWu0o641yieg7NZTKHwFxgImwqAxP07NaJgU4l5W0Hg6TwugHvI0zhOaYXApqUEsR6CKIY1cp24rSq7uERzN_cGY1X4jUuZQoNftFgEeZbEnD-gpAef3wcLrFuU6SlN9vcNagg_1SPqUAhKJWaFC9APqXPHAZ_z92k7grAcCyFmlqv0el_pzUa8PPYPfsbx6ztA0_Kmt-SJ61NPwfOa7u-K2o6mWihCCIaNZ9xfxDmvscBpaJjN3qwaBgbuIfBTjGD2BsAI73DVg4gQ7CFTmkFwWjtTJxlfVX-51M104f24DaTHLmSvJSf9ZQ6Rb3PxwgmJvAsRb3C1I4tZHPVa9x0zML6TA-Qn1z0B1ByGTXr_rJF6xcb81bJEEXDcf25kBaKDWaJuks6Ijo98KeEoHjADLtOsnQyV6LYntQWZoYinQwqFdi06RXZ8Tycx75MgtpbzwcTpb56XtyNbNjTgxihjjlU68XAZ_rgsJ57m8iRqkhO4hubx10qKzN2NL3GRmA1Izkl_je2xUyh1AEgpDIgViKz6Lb2MDwjs65zyCrccyfFOm6OcCHDQklSgwDpwZ7Lz-VUttXOzW4qVh5gMluTzqzjjFiw8B_UL-s_NKA83GedsJaN-1GtTBoniKWrxdGefPRMLFOIvn74z5jEHbYgkL1h0rZAeszM8RHlkO6jU2yLkANsmn7MtZlcKKV-qF1go5n2JSEuuw5GoVTcP5VRDiWPvuw=w2560-h1279' />
 
@@ -38,8 +38,7 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetS
 ### 실행 방법
 
 1. Import wandb
-<pre> 
-<code>
+<pre> <code>
 !pip install wandb
 import wandb
 !wandb login
